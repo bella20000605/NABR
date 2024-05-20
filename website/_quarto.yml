@@ -2,20 +2,23 @@ project:
   type: website
 
 website:
-  title: "website"
+  title: "Climate and Wildlife: Understanding the Ecosystems of Southeastern Utah"
   navbar:
+    logo: "utah.png"
+    search: true
     left:
-      - href: index.qmd
-        text: Introduction
-      - about.qmd
+      - href: index.ipynb
+        text: Home
+    tools:
+      - icon: github
+        text: GitHub Repository
+        url: https://github.com/bella20000605/NABR
 
 format:
   html:
     theme:
-      light: flatly
+      light: United
       dark: darkly
-    css: styles.css
+    css: theme.scss
     toc: true
-
-
-
+    debug: true
